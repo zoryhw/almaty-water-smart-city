@@ -1,0 +1,28 @@
+{
+  "name": "smart-city-water-dashboard",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:server\" \"npm:dev:client\"",
+    "dev:client": "vite",
+    "dev:server": "back\\.venv\\Scripts\\python.exe back\\manage.py runserver 127.0.0.1:8787",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "back\\.venv\\Scripts\\python.exe back\\manage.py runserver 127.0.0.1:8787"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "leaflet": "^1.9.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
+    "recharts": "^2.15.3"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^6.2.0"
+  }
+}
