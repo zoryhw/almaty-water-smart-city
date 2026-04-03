@@ -1,1 +1,1 @@
-# almaty-water-smart-city
+В данном файле прототип
